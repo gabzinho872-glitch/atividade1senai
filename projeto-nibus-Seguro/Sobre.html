@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Sistema da Equipe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o projeto</title>
+  <link rel="stylesheet" href="css/sobre.css">
 </head>
+
 <body>
-    <!-- Título e Instruções -->
-    <h1>Formulário de Cadastro de Membro</h1>
-    <p>Preencha os dados abaixo para cadastrar um novo membro no sistema da equipe. Campos com asterisco (*) são obrigatórios.</p>
-    <form action="#" method="POST">
-    <!-- Campo 1: Texto (Obrigatório, minlength) -->
-        <div>
-            <label for="nome">Nome Completo *:</label><br>
-            <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite o nome completo">
-        </div>
-        <br>
-        <!-- Campo 2: E-mail (Obrigatório) -->
-        <div>
-            <label for="email">E-mail *:</label><br>
-            <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
-        </div>
-        <br>
-        <!-- Campo 3: Número (min e max) -->
-        <div>
-            <label for="idade">Idade:</label><br>
-            <input type="number" id="idade" name="idade" min="17" max="100" placeholder="Ex: 25">
-        </div>
-        <br>
-        <!-- Campo 4: Select -->
-        <div>
-            <label for="setor">Setor / Departamento:</label><br>
-            <select id="setor" name="setor">
-                <option value="">Selecione uma opção</option>
-                <option value="ti">Técnico em desenvolvimento</option>
-                <option value="rh">Recursos Humanos</option>
-                <option value="fin">Financeiro</option>
-            </select>
-        </div>
-        <br>
-        <!-- Campo 5: Radio -->
-        <div>
-            <label>Turno de Trabalho:</label><br>
-            <input type="radio" id="turno_manha" name="turno" value="manha">
-            <label for="turno_manha">Manhã</label>
-            <input type="radio" id="turno_noite" name="turno" value="noite">
-            <label for="turno_Noite">Noite</label>
-        </div>
-        <br>
-        <!-- Campo 6: Textarea (ou poderia ser um checkbox) -->
-        <div>
-            <label for="observacoes">Observações (opcional):</label><br>
-            <textarea id="observacoes" name="observacoes" rows="4" cols="30" placeholder="Adicione alguma observação sobre o membro..."></textarea>
-        </div>
-        <br>
-        <button type="submit">Cadastrar</button>
-    </form>
-    <br>
-    <a href="index.html">Voltar para a Página Inicial</a>
+
+  <header>
+    <h1>Sobre o projeto</h1>
+    <p>Ajudando motoristas a chegar ao destino de um jeito mais rápido e tranquilo</p>
+  </header>
+
+  <nav>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#rotas">Rotas alternativas</a>
+    <a href="#motoristas">Ajuda aos motoristas</a>
+  </nav>
+
+  <main>
+
+    <!-- Objetivo do sistema -->
+    <section id="objetivo">
+      <h2>Objetivo do sistema</h2>
+      <p>
+        A ideia do sistema é ajudar quem dirige a escolher o melhor caminho
+        para chegar ao destino. Assim, o motorista perde menos tempo no
+        trânsito e evita engarrafamentos e ruas com problemas.
+      </p>
+    </section>
+
+    <!-- Rotas alternativas -->
+    <section id="rotas">
+      <h2>Como funcionam as rotas alternativas</h2>
+      <p>
+        Quando o motorista coloca o local de saída e o de chegada, o sistema
+        mostra mais de um caminho possível. Se o trajeto principal estiver
+        ruim, ele sugere outro.
+      </p>
+      <ul>
+        <li>Olha como está o trânsito nas ruas.</li>
+        <li>Avisa sobre acidentes, obras e bloqueios.</li>
+        <li>Compara o tempo e a distância de cada caminho.</li>
+        <li>Indica qual rota vale mais a pena.</li>
+        <li>Muda a rota durante a viagem se algo mudar no trânsito.</li>
+      </ul>
+    </section>
+
+    <!-- Como ajuda os motoristas -->
+    <section id="motoristas">
+      <h2>Como o sistema ajuda os motoristas</h2>
+      <p>
+        Com as informações do sistema, o motorista decide melhor por onde
+        ir e dirige com menos preocupação.
+      </p>
+      <ul>
+        <li>Economiza tempo nas viagens do dia a dia.</li>
+        <li>Gasta menos combustível.</li>
+        <li>Fica menos estressado no trânsito.</li>
+        <li>Evita trechos perigosos ou com ocorrências.</li>
+        <li>Consegue se organizar melhor para chegar no horário.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido para fins de estudo - 2026</p>
+  </footer>
+
 </body>
 </html>
